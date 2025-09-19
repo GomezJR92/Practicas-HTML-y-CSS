@@ -1,0 +1,19 @@
+div{
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) 5fr;
+    
+}
+
+aside{
+    border: 3px solid red;
+    height: 100vh;
+
+}
+
+main{
+    border: 3px solid blue;
+}
+
+body{
+    margin: 0;
+}
