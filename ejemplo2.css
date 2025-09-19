@@ -1,0 +1,28 @@
+section{
+    padding-top: 200px;
+}
+div{
+    border: 1px solid;
+    opacity: .9;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    background: #f3f4f5;
+    box-shadow: 0 0 5px black;
+    position: relative;
+}
+
+div:first-child{
+    background: yellow;
+    z-index: 1;
+}
+
+div:nth-child(2){
+    background: #4aa4f8;
+    z-index: 2;
+}
+
+div:last-child{
+    background: red;
+    z-index: 3;
+}
