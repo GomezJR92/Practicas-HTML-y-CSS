@@ -1,0 +1,14 @@
+div{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,
+    minmax(100px, 1fr));
+    /*grid-template-columns: repeat(auto-fit,//cuando son pocas imagenes ajusta para que ocupe toda la pantalla
+    minmax(100px, 1fr));*/
+    gap: 16px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
