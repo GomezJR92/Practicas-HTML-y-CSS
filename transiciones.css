@@ -1,0 +1,25 @@
+.pulser{
+    width: 50px;
+    height: 50px;
+    background: #09f;
+    border-radius: 100%;
+    position: relative;
+    transition-duration: 2s;
+    transition-property: background, scale, box-shadow;/*
+    para indiciar que quiero animar y que no, por temas
+     de rendimiento*/
+    transition-timing-function: ease;
+    transition-delay: 1s;
+}
+
+.pulser:hover{
+    scale: 2;
+    background: red;
+    box-shadow: 0 0 10px red;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
