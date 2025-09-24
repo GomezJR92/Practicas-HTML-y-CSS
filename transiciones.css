@@ -4,18 +4,29 @@
     background: #09f;
     border-radius: 100%;
     position: relative;
-    transition-duration: 2s;
-    transition-property: background, scale, box-shadow;/*
+    transition: all 300ms ease-in-out; /*Estado final*/
+        /*ackground 300ms linear,
+        scale 500ms ease-in-out,
+        box-shadow 1s ease;
+    /* transition-duration: 2s;
+    transition-property: background, scale, box-shadow;
     para indiciar que quiero animar y que no, por temas
-     de rendimiento*/
+     de rendimiento
     transition-timing-function: ease;
-    transition-delay: 1s;
+    transition-delay: 1s; */
 }
 
 .pulser:hover{
     scale: 2;
     background: red;
     box-shadow: 0 0 10px red;
+    transition-duration: 500ms;/*La primera animacion*/
+}
+
+@media (prefers-reduced-motion: reduce){
+    .pulser{
+        transition: none;
+    }
 }
 
 body{
